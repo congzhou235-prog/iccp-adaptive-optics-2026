@@ -16,7 +16,12 @@ Quantities in the CSV are for one sensor. Also prepare clean gloves, a computer 
 
 The front housing holds the camera board and has an SM1 opening. The back housing secures the board and leaves the camera connector accessible. Four screws join the two parts.
 
-Print files are not available yet. STL files, editable CAD files, print material and settings, and the screw thread and length still need to be added before others can reproduce the housing.
+Download both STEP models for the camera housing:
+
+- [hartmann1.STEP](../hartmann1.STEP)
+- [hartmann2 - 0923new.step](../hartmann2%20-%200923new.step)
+
+STL files, print material and settings, and the screw thread and length still need to be added.
 
 ## Assembly
 
