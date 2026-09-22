@@ -1,0 +1,16 @@
+name: sh-tutorial
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - pillow
+  - pyyaml
+
+
+# conda env create -f tutorial_environment.yml
+# conda activate sh-tutorial

@@ -1,0 +1,29 @@
+# Reference analysis settings for the offline Shack-Hartmann tutorial.
+# These parameters belong to the solution/analysis program, not to the optical setup.
+
+spot_detection:
+  background_percentile: 5.0
+  blur_sigma_px: 1.0
+  threshold_relative: 0.20
+  min_area_px: 5
+  max_area_px: 800
+  edge_margin_px: 2
+  max_match_distance_lenslet_pitch: 0.45
+
+gate:
+  enabled: true
+  half_cols: 5.0
+  half_rows: 5.0
+  residual_mad_k: 4.0
+  min_keep_fraction: 0.85
+
+zernike:
+  indices: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+  fit_edge_radius_fraction: 0.98
+  regularization: l1
+  l1_lambda: 0.02
+  l1_max_iter: 5000
+  l1_tol: 1.0e-9
+
+visualization:
+  arrow_gain: 20.0

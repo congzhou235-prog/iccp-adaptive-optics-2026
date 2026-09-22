@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build a Shack-Hartmann sensor and learn to measure wavefront aberrations. Course notes, an assembly guide, and an offline Python tutorial for ICCP 2026.">
+  <meta name="theme-color" content="#0b1017">
+  <title>Adaptive Optics · ICCP Mini-Course 2026</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand lab-brand" href="https://ai4scientificimaging.org/" target="_blank" rel="noopener" aria-label="PKU Computational Scientific Imaging Lab website"><span class="brand-name">PKU Computational Scientific Imaging Lab</span><span class="brand-year">/ 2026</span></a>
+      <nav aria-label="Main navigation"><a href="#materials">Materials</a><a href="#tutorial">Tutorial</a><a href="#results">Results</a></nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> ICCP ADAPTIVE OPTICS MINI-COURSE 2026</p>
+          <h1 id="hero-title">See the shape<br>of <span>light.</span></h1>
+          <p class="hero-description">Build a Shack-Hartmann sensor.<br>Turn a pattern of light into a wavefront measurement.</p>
+          <p class="hero-detail">A hands-on introduction to adaptive optics, from assembling the sensor to fitting Zernike aberrations in Python.</p>
+          <div class="hero-actions"><a class="button primary" href="#materials">Explore the course <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-tags"><span>Optics</span><span>Hands-on assembly</span><span>Python analysis</span></div>
+        </div>
+
+        <figure class="sensor-panel">
+          <div class="panel-top"><span><i class="tiny-dot"></i> SHACK-HARTMANN SENSOR</span><span class="panel-id">01 / SPOT FIELD</span></div>
+          <svg id="spot-field" viewBox="0 0 480 390" role="img" aria-labelledby="field-title field-desc">
+            <title id="field-title">Illustration of a Shack-Hartmann spot pattern</title>
+            <desc id="field-desc">A regular reference grid with colored spots. Select a wavefront mode to see an illustrative change in spot position.</desc>
+            <defs>
+              <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse" x="78" y="33"><path d="M 36 0 L 0 0 0 36" fill="none" stroke="#7f92b0" stroke-opacity=".08"/></pattern>
+              <radialGradient id="field-glow"><stop stop-color="#29787c" stop-opacity=".13"/><stop offset="1" stop-color="#29787c" stop-opacity="0"/></radialGradient>
+              <filter id="spot-glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2.7"/></filter>
+            </defs>
+            <rect x="42" y="15" width="396" height="360" fill="url(#grid)"/>
+            <ellipse cx="240" cy="195" rx="195" ry="180" fill="url(#field-glow)"/>
+            <circle cx="240" cy="195" r="165" fill="none" stroke="#91a6bb" stroke-opacity=".16" stroke-dasharray="3 7"/>
+            <path d="M 240 22 V 368 M 67 195 H 413" stroke="#91a6bb" stroke-opacity=".13" stroke-dasharray="3 7"/>
+            <g id="reference-spots"></g><g id="measured-spots"></g>
+          </svg>
+          <noscript><p class="no-script">Enable JavaScript to explore the illustrated spot patterns.</p></noscript>
+          <div class="sensor-controls" role="group" aria-label="Illustrated wavefront mode">
+            <button type="button" data-mode="flat" aria-pressed="true">Flat</button>
+            <button type="button" data-mode="tilt" aria-pressed="false">Tilt</button>
+            <button type="button" data-mode="defocus" aria-pressed="false">Defocus</button>
+            <button type="button" data-mode="astigmatism" aria-pressed="false">Astigmatism</button>
+            <button type="button" data-mode="coma" aria-pressed="false">Coma</button>
+          </div>
+          <div id="mode-description" class="mode-description" aria-live="polite"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="φ = 0"><mrow><mi class="equation-symbol">φ</mi><mo>=</mo><mn>0</mn></mrow></math></div>
+          <p class="mode-convention">Unnormalized modes, x² + y² ≤ 1, +y points up</p>
+          <figcaption><span><i class="legend-ring"></i> Reference <i class="legend-spot"></i> Spot</span><span>Illustration · not measured data</span></figcaption>
+        </figure>
+      </section>
+
+      <div class="principle-strip"><span class="eyebrow">THE MEASUREMENT</span><p>Spot positions <span aria-hidden="true">→</span> Local slopes <span aria-hidden="true">→</span> Wavefront shape</p></div>
+
+      <section class="section" id="materials" aria-labelledby="materials-title">
+        <div class="section-heading"><div><p class="eyebrow">01 / COURSE MATERIALS</p><h2 id="materials-title">Start here.</h2></div><p>Three steps, from the basic idea<br>to your first measurement.</p></div>
+        <div class="material-grid">
+          <article class="material-card"><div class="card-top"><span class="step-number">01</span><span class="file-tag">PDF · NOTES</span></div><h3>Understand the wavefront</h3><p>Learn how wavefronts, spot shifts, and Zernike modes connect to adaptive optics.</p><a class="card-link" href="Hartmann%20Sensor%20Course%20Notes.pdf" target="_blank" rel="noopener">Open course notes <span aria-hidden="true">↗</span></a></article>
+          <article class="material-card"><div class="card-top"><span class="step-number">02</span><span class="file-tag">PDF · ASSEMBLY</span></div><h3>Build the sensor</h3><p>Assemble the camera and microlens array, adjust the focus, and align the spot pattern.</p><a class="card-link" href="Assembly%20Guide%20for%20the%20Hartmann%20Sensor.pdf" target="_blank" rel="noopener">Open assembly guide <span aria-hidden="true">↗</span></a></article>
+          <article class="material-card"><div class="card-top"><span class="step-number">03</span><span class="file-tag">PYTHON · TUTORIAL</span></div><h3>Measure the aberrations</h3><p>Use the saved images to calibrate the sensor, track spot shifts, and fit Zernike coefficients.</p><a class="card-link" href="#tutorial">Start the image analysis <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </section>
+
+      <section class="section tutorial-section" id="tutorial" aria-labelledby="tutorial-title">
+        <div class="tutorial-copy"><p class="eyebrow">02 / OFFLINE IMAGE ANALYSIS</p><h2 id="tutorial-title">From spots<br>to coefficients.</h2><p>The tutorial includes Python scripts, calibration images, sample datasets, and a notebook that walks through the workflow.</p><p>Download and extract the package. Open a terminal in <code>sh_tutorial_prog</code>, then create and activate the environment.</p><a class="button primary" href="downloads/sh-tutorial.zip" download>Download code &amp; data <span aria-hidden="true">↓</span></a><p class="download-note">ZIP · Includes environment file and example data</p><div class="resource-links"><a href="sh_tutorial_prog/README.md">Read README <span aria-hidden="true">↗</span></a><a href="sh_tutorial_prog/main.ipynb" download>Download notebook <span aria-hidden="true">↓</span></a><a href="sh_tutorial_prog/tutorial_environment.yml" download>Environment file <span aria-hidden="true">↓</span></a></div></div>
+        <div class="terminal"><div class="terminal-header"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>QUICK START</span><span>CONDA / PYTHON</span></div><div class="terminal-body"><p class="code-comment"># 1. Set up the environment</p><pre><code>conda env create -f tutorial_environment.yml
+conda activate sh-tutorial</code></pre><p class="code-comment"># 2. Calibrate the sensor</p><pre><code>python calibration.py</code></pre><p class="code-comment"># 3. Analyze the first dataset</p><pre><code>python analyze_zernike.py --group first_10_zernike</code></pre><div class="terminal-note"><span aria-hidden="true">↳</span><p>Or open <code>main.ipynb</code> in VS Code and select the <code>sh-tutorial</code> Python environment as the notebook kernel.</p></div></div></div>
+      </section>
+
+      <section class="section" id="results" aria-labelledby="results-title">
+        <div class="section-heading"><div><p class="eyebrow">03 / A LOOK AT THE OUTPUT</p><h2 id="results-title">Make the wavefront visible.</h2></div><p>Example outputs from a mixed Zernike sample (j = 3, 7, 10, 15).<br>Open each image for a closer look.</p></div>
+        <div class="result-grid">
+          <figure class="result-card"><a href="sh_tutorial_prog/results/zernike_mixed_zernike_20260709_110737/sample_02_j03+j07+j10+j15/spot_displacements_gate.png" target="_blank" rel="noopener" aria-label="Open full-size mixed Zernike spot displacement plot"><img src="sh_tutorial_prog/results/zernike_mixed_zernike_20260709_110737/sample_02_j03+j07+j10+j15/spot_displacements_gate.png" alt="Mixed Zernike sample (j = 3, 7, 10, 15) with reference and measured spot positions and displacement arrows" width="1800" height="1400" loading="lazy"></a><figcaption><span class="file-tag">SPOT DISPLACEMENTS</span><h3>Follow the spot shifts.</h3><p>Arrows show the displacement of selected spots, enlarged for visibility.</p></figcaption></figure>
+          <figure class="result-card"><a href="sh_tutorial_prog/results/zernike_mixed_zernike_20260709_110737/sample_02_j03+j07+j10+j15/true_vs_measured_zernike.png" target="_blank" rel="noopener" aria-label="Open full-size Zernike coefficient comparison"><img class="coefficient-image" src="sh_tutorial_prog/results/zernike_mixed_zernike_20260709_110737/sample_02_j03+j07+j10+j15/true_vs_measured_zernike.png" alt="Bar chart comparing the true and measured phase coefficients for the mixed Zernike sample (j = 3, 7, 10, 15)" loading="lazy"></a><figcaption><span class="file-tag">ZERNIKE COEFFICIENTS</span><h3>Compare the recovered modes.</h3><p>Compare fitted phase coefficients with the supplied values and inspect the differences.</p></figcaption></figure>
+        </div>
+      </section>
+    </main>
+    <footer><a class="brand footer-brand" href="https://ai4scientificimaging.org/" target="_blank" rel="noopener">PKU Computational Scientific Imaging Lab</a><p>ICCP Mini-Course · 2026</p><a href="#main">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </div>
+</body>
+</html>

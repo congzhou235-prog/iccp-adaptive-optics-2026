@@ -1,0 +1,75 @@
+{
+  "created_at": "2026-09-22T18:57:34",
+  "method": "offline_defocus_center_plus_tilt_axes",
+  "center_x_px": 637.6877296215351,
+  "center_y_px": 680.4975894163075,
+  "center_steps": {
+    "global": {
+      "center_x_px": 720.3770029433401,
+      "center_y_px": 603.1058644342937,
+      "used_vectors": 229,
+      "total_vectors": 229,
+      "median_displacement_px": 4.05425917975275,
+      "rms_line_residual_px": 212.08339583108918
+    },
+    "gate_once": {
+      "center_x_px": 635.5776176259947,
+      "center_y_px": 676.1792121507042,
+      "used_vectors": 100,
+      "total_vectors": 100,
+      "median_displacement_px": 3.059940009690712,
+      "rms_line_residual_px": 27.604892628907233
+    },
+    "gate_twice": {
+      "center_x_px": 637.6877296215351,
+      "center_y_px": 680.4975894163075,
+      "used_vectors": 100,
+      "total_vectors": 100,
+      "median_displacement_px": 3.087806906015862,
+      "rms_line_residual_px": 17.94167157396984
+    }
+  },
+  "pupil_x_axis_image": [
+    0.9995263939403201,
+    0.03077316715354733
+  ],
+  "pupil_y_axis_image": [
+    -0.028154955971149725,
+    -0.9996035706490162
+  ],
+  "pupil_y_axis_orthogonalized_image": [
+    0.03077316715354733,
+    -0.9995263939403201
+  ],
+  "pupil_x_rotation_deg_image_y_down": 1.7634510026333943,
+  "pupil_y_rotation_deg_image_y_down": -91.61337335134208,
+  "axis_dot": -0.0589025893802567,
+  "axis_determinant": -0.998263735174378,
+  "axis_angle_between_deg": 93.37682435397548,
+  "tilt_x_response": {
+    "axis_x": 0.9995263939403201,
+    "axis_y": 0.03077316715354733,
+    "angle_deg_image_y_down": 1.7634510026333943,
+    "median_dx_px": 1.4247447476415118,
+    "median_dy_px": 0.043864682849914516,
+    "used_vectors": 100,
+    "total_vectors": 100
+  },
+  "tilt_y_response": {
+    "axis_x": -0.028154955971149722,
+    "axis_y": -0.9996035706490161,
+    "angle_deg_image_y_down": -91.61337335134208,
+    "median_dx_px": -0.03850017286634966,
+    "median_dy_px": -1.3668964819992198,
+    "used_vectors": 100,
+    "total_vectors": 100
+  },
+  "reference_spots": 241,
+  "defocus_final_gated_spots": 100,
+  "tilt_x_final_gated_spots": 100,
+  "tilt_y_final_gated_spots": 100,
+  "gate_half_cols": 5.0,
+  "gate_half_rows": 5.0,
+  "optics_config": "C:\\Users\\zhoucong\\Desktop\\ICCP Adaptive Optics Mini-Course 2026\\sh_tutorial_prog\\config.yaml",
+  "analysis_config": "C:\\Users\\zhoucong\\Desktop\\ICCP Adaptive Optics Mini-Course 2026\\sh_tutorial_prog\\analysis_config.yaml"
+}

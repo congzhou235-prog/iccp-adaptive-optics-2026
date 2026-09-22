@@ -1,0 +1,16 @@
+# Objective optical information for the offline Shack-Hartmann tutorial.
+# Length uses m, wavelength uses m, image coordinates use px.
+
+paths:
+  results_dir: results
+
+camera:
+  image_size_px: [1440, 1080]  # [width, height]
+  pixel_pitch_m: 3.45e-6
+
+optics:
+  wavelength_m: 635.0e-9
+  lenslet_pitch_m: 300.0e-6
+  lenslet_focal_length_m: 14.6e-3
+  sh_magnification: 1.0
+  zernike_aperture_diameter_m: 4.4e-3

@@ -1,0 +1,10 @@
+group,sample,source_folder,source_image,source_coefficients,nonzero_zernike_j
+mixed_zernike,sample_01_j03+j07+j10,full_zernike_20260707_225911,measurement_camera.png,true_zernike_phase_coeffs.csv,3 7 10
+mixed_zernike,sample_02_j03+j07+j10+j15,full_zernike_20260707_225935,measurement_camera.png,true_zernike_phase_coeffs.csv,3 7 10 15
+mixed_zernike,sample_03_j03+j07+j10+j15+j19,full_zernike_20260707_225958,measurement_camera.png,true_zernike_phase_coeffs.csv,3 7 10 15 19
+mixed_zernike,sample_04_j03+j07+j08+j10+j15+j19,full_zernike_20260707_230024,measurement_camera.png,true_zernike_phase_coeffs.csv,3 7 8 10 15 19
+mixed_zernike,sample_05_j03+j05+j07+j08+j10+j15+j19,full_zernike_20260707_230047,measurement_camera.png,true_zernike_phase_coeffs.csv,3 5 7 8 10 15 19
+mixed_zernike,sample_06_j03+j05+j07+j08+j10+j12+j15+j19,full_zernike_20260707_230117,measurement_camera.png,true_zernike_phase_coeffs.csv,3 5 7 8 10 12 15 19
+mixed_zernike,sample_07_j03+j05+j07+j08+j10+j12+j15+j17+j19,full_zernike_20260707_230159,measurement_camera.png,true_zernike_phase_coeffs.csv,3 5 7 8 10 12 15 17 19
+mixed_zernike,sample_08_j03+j05+j07+j08+j10+j12+j15+j17+j19+j21,full_zernike_20260707_230248,measurement_camera.png,true_zernike_phase_coeffs.csv,3 5 7 8 10 12 15 17 19 21
+mixed_zernike,sample_09_j03+j05+j07+j08+j10+j12+j13+j15+j17+j19+j21,full_zernike_20260707_230346_end,measurement_camera.png,true_zernike_phase_coeffs.csv,3 5 7 8 10 12 13 15 17 19 21
