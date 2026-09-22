@@ -84,3 +84,19 @@
 .assembly-video figcaption a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
 @media(max-width:1000px){.site-header{flex-wrap:wrap;padding-block:22px}.hero{gap:26px}.hero .eyebrow{flex-wrap:wrap}}
 @media(max-width:740px){h1{font-size:clamp(48px,13vw,71px)}.hero-tags{flex-wrap:wrap}.panel-top{flex-wrap:wrap}.assembly-video video{max-height:none}}
+
+/* Consistent button feedback across course actions and mode controls. */
+.button,.sensor-controls button{
+  box-shadow:0 3px 10px #00000026;
+  transition:transform .2s,filter .2s,box-shadow .2s,background .2s,color .2s;
+}
+@media(hover:hover){
+  .button:hover,.sensor-controls button:hover{
+    transform:translateY(-2px);filter:brightness(1.1);
+    box-shadow:0 6px 18px #00000040;
+  }
+}
+.button:active,.sensor-controls button:active{transform:translateY(0);filter:brightness(.96)}
+@media(prefers-reduced-motion:reduce){
+  .button:hover,.sensor-controls button:hover,.material-card .card-link:hover{transform:none}
+}
