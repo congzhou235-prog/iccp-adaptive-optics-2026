@@ -90,13 +90,18 @@
   box-shadow:0 3px 10px #00000026;
   transition:transform .2s,filter .2s,box-shadow .2s,background .2s,color .2s;
 }
-@media(hover:hover){
-  .button:hover,.sensor-controls button:hover{
-    transform:translateY(-2px);filter:brightness(1.1);
-    box-shadow:0 6px 18px #00000040;
-  }
+.button:hover,.sensor-controls button:hover{
+  transform:translateY(-2px);filter:brightness(1.1);
+  box-shadow:0 6px 18px #00000040;
 }
 .button:active,.sensor-controls button:active{transform:translateY(0);filter:brightness(.96)}
 @media(prefers-reduced-motion:reduce){
   .button:hover,.sensor-controls button:hover,.material-card .card-link:hover{transform:none}
 }
+
+/* Extend the existing image link across its whole result card. */
+.result-card{position:relative;transition:border-color .2s,box-shadow .2s}
+.result-card>a::after{content:"";position:absolute;inset:0;z-index:1;cursor:zoom-in}
+.result-card:hover,.result-card:focus-within{border-color:var(--accent);box-shadow:0 0 0 1px #9ce6da33,0 6px 18px #00000040}
+.result-card>a:focus-visible{outline:none}
+.result-card:has(>a:focus-visible){outline:2px solid var(--accent);outline-offset:4px}
