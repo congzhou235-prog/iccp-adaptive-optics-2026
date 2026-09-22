@@ -61,24 +61,19 @@
 .parts-table tbody tr:last-child>*{border-bottom:0}
 .parts-table tbody tr:nth-child(even){background:#ffffff02}
 .hardware-note{font-size:12px;line-height:1.8;color:var(--muted);margin-top:20px;max-width:860px}
-.availability{border:1px solid #bda9e940;border-radius:20px;padding:5px 13px;color:#c9b7f1!important;font:11px/1.6 var(--mono)}
-.housing-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.housing-card{padding:25px 28px;border:1px solid var(--line);border-radius:6px;background:linear-gradient(120deg,#bda9e909,var(--panel))}
-.housing-card .file-tag{color:#c9b7f1}
-.housing-card h4{margin:12px 0}
-.housing-card p{font-size:13px;color:var(--muted);max-width:420px}
 .assembly-section{display:grid;grid-template-columns:1fr 1fr;gap:65px}
 .assembly-steps{list-style:none;counter-reset:assembly;margin:0;padding:0}
 .assembly-steps li{counter-increment:assembly;position:relative;padding:0 0 26px 45px}
 .assembly-steps li:last-child{padding-bottom:0}
 .assembly-steps li::before{content:"0" counter(assembly);position:absolute;left:0;top:0;color:var(--accent);font:14px/1.7 var(--mono)}
 .assembly-steps p{color:var(--muted);font-size:13px;margin-top:8px}
-@media(max-width:740px){.parts-table{min-width:650px}.parts-table th,.parts-table td{padding:16px}.housing-grid,.assembly-section{grid-template-columns:1fr;gap:24px}.housing-card{padding:23px}}
+@media(max-width:740px){.parts-table{min-width:650px}.parts-table th,.parts-table td{padding:16px}.assembly-section{grid-template-columns:1fr;gap:24px}}
 
 .hardware-resources{margin:0 0 30px;font-size:13px}
 .hardware-subsection+.hardware-subsection{border-top:1px solid var(--line);margin-top:32px;padding-top:32px}
 .hardware-subsection .section-heading{margin-bottom:20px}
 .hardware-subsection .section-heading h3,.hardware-subsection.assembly-section h3{font-size:24px;font-weight:480;line-height:1.3}
 .hardware-subsection h4{font-size:17px;font-weight:500;line-height:1.35;letter-spacing:-.25px;margin:0}
-.hardware-subsection .housing-card h4{margin:12px 0}
 @media(max-width:740px){.site-header nav{flex-wrap:wrap;justify-content:center;gap:12px 22px}}
+
+.model-downloads{display:flex;flex-direction:column;gap:10px;min-width:125px;overflow-wrap:anywhere}
