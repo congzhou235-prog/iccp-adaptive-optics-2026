@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Parts, printed housings, and assembly instructions for the ICCP Shack-Hartmann sensor.">
+  <meta name="theme-color" content="#0b1017">
+  <title>Hardware &amp; Assembly · ICCP Mini-Course 2026</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand lab-brand" href="https://ai4scientificimaging.org/" target="_blank" rel="noopener"><span class="brand-name">PKU Computational Scientific Imaging Lab</span><span class="brand-year">/ 2026</span></a>
+      <nav aria-label="Main navigation"><a href="index.html">Course</a><a href="#parts">Parts</a><a href="#assembly">Assembly</a></nav>
+    </header>
+    <main id="main">
+      <section class="hardware-intro" aria-labelledby="hardware-title">
+        <a class="back-link" href="index.html#materials">← Back to the course</a>
+        <p class="eyebrow">ICCP 2026 / HARDWARE &amp; ASSEMBLY</p>
+        <h1 id="hardware-title">Build your<br><span>Shack-Hartmann sensor.</span></h1>
+        <p class="hero-description">A camera, a microlens array, and a printed housing.</p>
+        <p class="hardware-lead">Start with the parts below, then follow the illustrated assembly guide to put the sensor together and adjust the spot pattern.</p>
+        <div class="hero-actions"><a class="button primary" href="Assembly%20Guide%20for%20the%20Hartmann%20Sensor.pdf" target="_blank" rel="noopener">Open assembly guide <span aria-hidden="true">↗</span></a><a class="text-link" href="hardware/BOM.csv" download>Download parts list <span aria-hidden="true">↓</span></a></div>
+      </section>
+
+      <section class="section" id="parts" aria-labelledby="parts-title">
+        <div class="section-heading"><div><p class="eyebrow">01 / PARTS LIST</p><h2 id="parts-title">What you need.</h2></div><p>Quantities are for one sensor.<br>Product links open the supplier pages.</p></div>
+        <div class="parts-table-wrap" role="region" aria-label="Sensor parts list" tabindex="0">
+          <table class="parts-table">
+            <thead><tr><th scope="col">Part</th><th scope="col">Model / specification</th><th scope="col">Qty.</th><th scope="col">Source</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Monochrome camera</th><td><strong>VEN-161-61U3M</strong><span>Bare board, no lens mount. Sony IMX296, 1440 × 1080 pixels, 3.45 µm pixel size.</span></td><td>1</td><td><a href="https://en.daheng-imaging.com/show-93-2117-1.html" target="_blank" rel="noopener">DAHENG ↗</a></td></tr>
+              <tr><th scope="row">Mounted microlens array</th><td><strong>MLAS10-F15-P300-AB</strong><span>300 µm pitch, 14.6 mm focal length, 400–900 nm coating. Mount diameter: 25.4 mm.</span></td><td>1</td><td><a href="https://en.lbtek.com/product/378" target="_blank" rel="noopener">LBTEK ↗</a></td></tr>
+              <tr><th scope="row">Lens tube</th><td><strong>SM1-12.5A</strong><span>SM1 internal and external threads, 12.5 mm internal thread length. Includes one SM1R retaining ring.</span></td><td>1</td><td><a href="https://en.lbtek.com/product/221" target="_blank" rel="noopener">LBTEK ↗</a></td></tr>
+              <tr><th scope="row">Retaining rings</th><td><strong>SM1R</strong><span>Two rings hold the array in place. With one included in the tube, add one extra.</span></td><td>2 total</td><td>Optics supplier</td></tr>
+              <tr><th scope="row">Printed housings</th><td><strong>Front + back</strong><span>One of each. Print files and settings will be added here.</span></td><td>1 pair</td><td><a href="#printed-parts">Details ↓</a></td></tr>
+              <tr><th scope="row">Housing screws</th><td><strong>Size to be confirmed</strong><span>The assembly uses four screws. Thread and length will be listed with the housing files.</span></td><td>4</td><td>To be confirmed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="hardware-note">Also prepare a compatible USB 3.0 camera cable, an SM1 spanner wrench, clean gloves, and a computer with the camera driver and Galaxy Viewer. A collimated beam is needed to check focus and alignment.</p>
+      </section>
+
+      <section class="section" id="printed-parts" aria-labelledby="print-title">
+        <div class="section-heading"><div><p class="eyebrow">02 / PRINTED PARTS</p><h2 id="print-title">The camera housing.</h2></div><p class="availability">Print files coming soon</p></div>
+        <div class="housing-grid">
+          <article class="housing-card"><span class="file-tag">PART 01</span><h3>Front housing</h3><p>Holds the camera board and provides the SM1 opening for the lens tube. The sensor faces this opening.</p></article>
+          <article class="housing-card"><span class="file-tag">PART 02</span><h3>Back housing</h3><p>Secures the camera board with four screws. The opening lines up with the camera connector.</p></article>
+        </div>
+        <p class="hardware-note">STL files, editable CAD files, print material, settings, and screw sizes are not available yet. These details are needed to reproduce the housing.</p>
+      </section>
+
+      <section class="section assembly-section" id="assembly" aria-labelledby="assembly-title">
+        <div><p class="eyebrow">03 / ASSEMBLY</p><h2 id="assembly-title">Put it together.<br>Bring the spots into focus.</h2><p class="hardware-lead">The existing guide includes photos for each stage, camera setup, and an example of the final spot pattern.</p><a class="button primary" href="Assembly%20Guide%20for%20the%20Hartmann%20Sensor.pdf" target="_blank" rel="noopener">Read the illustrated guide <span aria-hidden="true">↗</span></a></div>
+        <ol class="assembly-steps">
+          <li><h3>Fit the camera</h3><p>Place the board in the front housing. Fit the back housing and tighten the four screws gently.</p></li>
+          <li><h3>Mount the array</h3><p>Hold the microlens array between two retaining rings in the lens tube, then attach the tube to the housing.</p></li>
+          <li><h3>Start the camera</h3><p>Connect the camera and open the live image in Galaxy Viewer. Center the sensor in the collimated beam.</p></li>
+          <li><h3>Focus and align</h3><p>Adjust the array position until the spots are small and clear. Rotate the array to align the grid, then secure it gently.</p></li>
+        </ol>
+      </section>
+      <div class="hardware-next"><p>Ready to work with spot images?</p><a href="index.html#tutorial">Open the Python tutorial <span aria-hidden="true">→</span></a></div>
+    </main>
+    <footer><a class="brand footer-brand" href="https://ai4scientificimaging.org/" target="_blank" rel="noopener">PKU Computational Scientific Imaging Lab</a><p>ICCP Mini-Course · 2026</p><a href="#main">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </div>
+</body>
+</html>

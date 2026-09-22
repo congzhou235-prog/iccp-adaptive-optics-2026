@@ -7,6 +7,7 @@ Build a Shack-Hartmann sensor and learn to measure wavefront aberrations.
 ## Course materials
 
 - [Course notes](Hartmann%20Sensor%20Course%20Notes.pdf)
+- [Hardware and parts list](hardware/README.md)
 - [Assembly guide](Assembly%20Guide%20for%20the%20Hartmann%20Sensor.pdf)
 - [Offline image analysis tutorial](sh_tutorial_prog/README.md)
 - [Tutorial notebook](sh_tutorial_prog/main.ipynb)
