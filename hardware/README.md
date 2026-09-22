@@ -16,7 +16,7 @@ Quantities in the CSV are for one sensor. Also prepare clean gloves, a computer 
 
 ## Printed parts
 
-The front housing holds the camera board and has an SM1 opening. The back housing secures the board and leaves the camera connector accessible. Four M2 screws and four M2 nuts join the two parts.
+The front housing holds the camera board and has an SM1 opening. The back housing secures the board and leaves the camera connector accessible. Four M2 screws and four M2×2 brass insert nuts join the two parts.
 
 [Download both STEP models (ZIP)](../downloads/camera-housing-step.zip). Extract the archive to get a `camera-housing` folder containing both files.
 
@@ -25,9 +25,9 @@ Individual files:
 - [hartmann1.STEP](../hartmann1.STEP)
 - [hartmann2 - 0923new.step](../hartmann2%20-%200923new.step)
 
-During printing, pause when the housing’s recessed holes are accessible. Press the four M2 nuts into the recesses, then resume printing. Use the embedded nuts to secure the housing with the M2 screws.
+During printing, pause when the housing’s recessed holes are accessible. Use M2×2 brass insert nuts to fit the reserved holes. Press the four nuts into the recesses, then resume printing. Use the embedded nuts to secure the housing with the M2 screws.
 
-Choose a strong printing material with good heat resistance. The specific material, print settings, STL files, and screw length are still to be added.
+Choose a strong printing material with good heat resistance. The specific material, print settings, and STL files are still to be added.
 
 ## Assembly
 
