@@ -76,4 +76,3 @@
 .hardware-subsection h4{font-size:17px;font-weight:500;line-height:1.35;letter-spacing:-.25px;margin:0}
 @media(max-width:740px){.site-header nav{flex-wrap:wrap;justify-content:center;gap:12px 22px}}
 
-.model-downloads{display:flex;flex-direction:column;gap:10px;min-width:125px;overflow-wrap:anywhere}
