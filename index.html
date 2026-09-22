@@ -71,7 +71,7 @@
 
       <section class="section hardware-section" id="hardware" aria-labelledby="hardware-title">
         <div class="section-heading"><div><p class="eyebrow">02 / HARDWARE &amp; ASSEMBLY</p><h2 id="hardware-title">Build your sensor.</h2></div></div>
-        <div class="resource-links hardware-resources"><a href="Assembly%20Guide%20for%20the%20Hartmann%20Sensor.pdf" target="_blank" rel="noopener">Open assembly guide <span aria-hidden="true">↗</span></a><a href="hardware/BOM.csv" download>Download parts list <span aria-hidden="true">↓</span></a></div>
+        
       <section class="hardware-subsection" id="parts" aria-labelledby="parts-title">
         <div class="section-heading"><div><h3 id="parts-title">What you need.</h3></div></div>
         <div class="parts-table-wrap" role="region" aria-label="Sensor parts list" tabindex="0">
@@ -111,7 +111,7 @@
       </section>
 
       <section class="section tutorial-section" id="tutorial" aria-labelledby="tutorial-title">
-        <div class="tutorial-copy"><p class="eyebrow">03 / OFFLINE IMAGE ANALYSIS</p><h2 id="tutorial-title">From spots<br>to coefficients.</h2><p>The tutorial includes Python scripts, calibration images, sample datasets, and a notebook that walks through the workflow.</p><p>Download and extract the package. Open a terminal in <code>sh_tutorial_prog</code>, then create and activate the environment.</p><a class="button primary" href="downloads/sh-tutorial.zip" download>Download code &amp; data <span aria-hidden="true">↓</span></a><p class="download-note">ZIP · Includes environment file and example data</p><div class="resource-links"><a href="sh_tutorial_prog/README.md">Read README <span aria-hidden="true">↗</span></a><a href="sh_tutorial_prog/main.ipynb" download>Download notebook <span aria-hidden="true">↓</span></a><a href="sh_tutorial_prog/tutorial_environment.yml" download>Environment file <span aria-hidden="true">↓</span></a></div></div>
+        <div class="tutorial-copy"><p class="eyebrow">03 / OFFLINE IMAGE ANALYSIS</p><h2 id="tutorial-title">From spots<br>to coefficients.</h2><p>The tutorial includes Python scripts, calibration images, sample datasets, and a notebook that walks through the workflow.</p><p>Download and extract the package. Open a terminal in <code>sh_tutorial_prog</code>, then create and activate the environment.</p><a class="button primary" href="downloads/sh-tutorial.zip" download>Download code &amp; data <span aria-hidden="true">↓</span></a><p class="download-note">ZIP · Includes environment file and example data</p></div>
         <div class="terminal"><div class="terminal-header"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>QUICK START</span><span>CONDA / PYTHON</span></div><div class="terminal-body"><p class="code-comment"># 1. Set up the environment</p><pre><code>conda env create -f tutorial_environment.yml
 conda activate sh-tutorial</code></pre><p class="code-comment"># 2. Calibrate the sensor</p><pre><code>python calibration.py</code></pre><p class="code-comment"># 3. Analyze the first dataset</p><pre><code>python analyze_zernike.py --group first_10_zernike</code></pre><div class="terminal-note"><span aria-hidden="true">↳</span><p>Or open <code>main.ipynb</code> in VS Code and select the <code>sh-tutorial</code> Python environment as the notebook kernel.</p></div></div></div>
       </section>
