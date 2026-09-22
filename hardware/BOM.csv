@@ -2,9 +2,9 @@ Part,Model,Quantity,Specification,Source,Notes
 Monochrome camera,VEN-161-61U3M,1,"Bare board without lens mount; Sony IMX296; 1440 x 1080; 3.45 um pixels",https://en.daheng-imaging.com/show-93-2117-1.html,Use the bare-board variant for the printed housing
 Mounted microlens array,MLAS10-F15-P300-AB,1,"300 um pitch; 14.6 mm focal length; 400-900 nm coating; 25.4 mm mount",https://en.lbtek.com/product/378,
 Lens tube,SM1-12.5A,1,SM1 internal and external threads; 12.5 mm internal thread length,https://en.lbtek.com/product/221,Includes one SM1R retaining ring
-Retaining ring,SM1R,2,Two rings total,Optics supplier,Buy one extra if one is included with the lens tube
-Front housing,Custom printed part,1,Camera board seat and SM1 opening,,STEP models linked in hardware/README.md; STL and print settings pending
-Back housing,Custom printed part,1,Camera connector opening,,STEP models linked in hardware/README.md; STL and print settings pending
+Retaining ring,SM1R,2,SM1 external thread; 2.0 mm thick; 23.0 mm clear aperture; for 25.4 mm optics; black anodized 6061-T6 aluminum,https://en.lbtek.com/product/135#SM1R,Buy one extra if one is included with the lens tube
+Front housing,Custom printed part,1,Camera board seat and SM1 opening,,Choose a strong material with good heat resistance; STEP models linked in hardware/README.md; STL and print settings pending
+Back housing,Custom printed part,1,Camera connector opening,,Choose a strong material with good heat resistance; STEP models linked in hardware/README.md; STL and print settings pending
 Housing screw,M2,4,M2 thread; length pending,Hardware supplier,Confirm screw length before ordering
 Housing nut,M2,4,M2 nut,Hardware supplier,Press into the housing recessed holes during printing
 Camera cable,Compatible USB 3.0 cable,1,Match the camera connector and computer port,,Accessory

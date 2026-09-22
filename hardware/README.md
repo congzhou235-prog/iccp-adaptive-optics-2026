@@ -10,6 +10,8 @@ The sensor uses a DAHENG VEN-161-61U3M bare-board camera, an LBTEK MLAS10-F15-P3
 - [Microlens array: MLAS10-F15-P300-AB](https://en.lbtek.com/product/378). Pitch: 300 µm. Focal length: 14.6 mm. Mount diameter: 25.4 mm.
 - [Lens tube: SM1-12.5A](https://en.lbtek.com/product/221). Includes one SM1R retaining ring. The assembly needs two rings in total, so add one extra.
 
+- [Retaining ring: SM1R](https://en.lbtek.com/product/135#SM1R). SM1 external thread, 2.0 mm thickness, Ø23.0 mm clear aperture, for Ø25.4 mm optics. Black anodized 6061-T6 aluminum alloy. Two rings are needed in total, including the one supplied with the lens tube.
+
 Quantities in the CSV are for one sensor. Also prepare clean gloves, a computer with the camera driver and Galaxy Viewer, and a collimated beam for adjustment.
 
 ## Printed parts
@@ -25,7 +27,7 @@ Individual files:
 
 During printing, pause when the housing’s recessed holes are accessible. Press the four M2 nuts into the recesses, then resume printing. Use the embedded nuts to secure the housing with the M2 screws.
 
-STL files, print material and settings, and the screw length still need to be added.
+Choose a strong printing material with good heat resistance. The specific material, print settings, STL files, and screw length are still to be added.
 
 ## Assembly
 
