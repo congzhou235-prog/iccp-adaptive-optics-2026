@@ -6,7 +6,7 @@
   <meta name="description" content="Build a Shack-Hartmann sensor and learn to measure wavefront aberrations. Course notes, an assembly guide, and an offline Python tutorial for ICCP 2026.">
   <meta name="theme-color" content="#0b1017">
   <title>Adaptive Optics · ICCP Mini-Course 2026</title>
-  <link rel="stylesheet" href="assets/style.css?v=20260923-assembly-title">
+  <link rel="stylesheet" href="assets/style.css?v=20260923-notebook-first">
   <script src="assets/site.js" defer></script>
 </head>
 <body>
@@ -110,9 +110,16 @@
       </section>
 
       <section class="section tutorial-section" id="tutorial" aria-labelledby="tutorial-title">
-        <div class="tutorial-copy"><p class="eyebrow">03 / OFFLINE IMAGE ANALYSIS</p><h2 id="tutorial-title">From spots<br>to coefficients.</h2><p>The tutorial includes Python scripts, calibration images, sample datasets, and a notebook that walks through the workflow.</p><p>Download and extract the package. Open a terminal in <code>sh_tutorial_prog</code>, then create and activate the environment.</p><a class="button primary" href="downloads/sh-tutorial.zip" download>Download code &amp; data <span aria-hidden="true">↓</span></a><p class="download-note">ZIP · Includes environment file and example data</p></div>
-        <div class="terminal"><div class="terminal-header"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>QUICK START</span><span>CONDA / PYTHON</span></div><div class="terminal-body"><p class="code-comment"># 1. Set up the environment</p><pre><code>conda env create -f tutorial_environment.yml
-conda activate sh-tutorial</code></pre><p class="code-comment"># 2. Calibrate the sensor</p><pre><code>python calibration.py</code></pre><p class="code-comment"># 3. Analyze the first dataset</p><pre><code>python analyze_zernike.py --group first_10_zernike</code></pre><div class="terminal-note"><span aria-hidden="true">↳</span><p>Or open <code>main.ipynb</code> in VS Code and select the <code>sh-tutorial</code> Python environment as the notebook kernel.</p></div></div></div>
+        <div class="tutorial-copy"><p class="eyebrow">03 / OFFLINE IMAGE ANALYSIS</p><h2 id="tutorial-title">From spots<br>to coefficients.</h2><p>Start with <code>main.ipynb</code>, the main notebook for this tutorial. The package also includes Python scripts, calibration images, and sample datasets.</p><p>Download and extract the package. Open a terminal in <code>sh_tutorial_prog</code>, then create and activate the environment.</p><a class="button primary" href="downloads/sh-tutorial.zip" download>Download code &amp; data <span aria-hidden="true">↓</span></a><p class="download-note">ZIP · Includes environment file and example data</p></div>
+        <div class="terminal">
+          <div class="terminal-header"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>QUICK START</span><span>MAIN NOTEBOOK</span></div>
+          <div class="terminal-body">
+            <div class="notebook-start"><p class="code-comment">START HERE</p><h3><code>main.ipynb</code></h3><p>Use this notebook as your main guide. After setting up the environment below, open <code>main.ipynb</code> in VS Code and select the <code>sh-tutorial</code> Python environment as the notebook kernel. Follow the notebook instructions and run the cells in order.</p></div>
+            <p class="code-comment"># Set up the environment</p><pre><code>conda env create -f tutorial_environment.yml
+conda activate sh-tutorial</code></pre>
+            <details class="script-alternative"><summary>Optional: run scripts from the terminal</summary><p class="code-comment"># Calibrate the sensor</p><pre><code>python calibration.py</code></pre><p class="code-comment"># Analyze the first dataset</p><pre><code>python analyze_zernike.py --group first_10_zernike</code></pre></details>
+          </div>
+        </div>
       </section>
 
       <section class="section" id="results" aria-labelledby="results-title">

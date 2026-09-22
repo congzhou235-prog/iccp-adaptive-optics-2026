@@ -107,3 +107,14 @@ a.result-card:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
 
 #assembly-title{font-size:36px;line-height:1.25;letter-spacing:-.8px}
 @media(max-width:740px){#assembly-title{font-size:30px}}
+
+.notebook-start{margin-bottom:24px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.notebook-start h3{margin-bottom:12px;font-size:23px}
+.notebook-start h3 code{color:var(--accent)}
+.notebook-start>p:last-child{font-size:15px;color:var(--muted)}
+.script-alternative{border-top:1px solid var(--line);padding-top:18px}
+.script-alternative summary{cursor:pointer;color:var(--muted);font-size:14px}
+.script-alternative summary:hover{color:var(--accent)}
+.script-alternative summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.script-alternative[open] summary{margin-bottom:22px}
+.script-alternative pre:last-child{margin-bottom:0}
