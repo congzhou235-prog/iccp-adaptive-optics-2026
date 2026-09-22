@@ -5,6 +5,7 @@ Lens tube,SM1-12.5A,1,SM1 internal and external threads; 12.5 mm internal thread
 Retaining ring,SM1R,2,Two rings total,Optics supplier,Buy one extra if one is included with the lens tube
 Front housing,Custom printed part,1,Camera board seat and SM1 opening,,STEP models linked in hardware/README.md; STL and print settings pending
 Back housing,Custom printed part,1,Camera connector opening,,STEP models linked in hardware/README.md; STL and print settings pending
-Housing screw,To be confirmed,4,Thread and length pending,,Confirm with housing design before ordering
+Housing screw,M2,4,M2 thread; length pending,Hardware supplier,Confirm screw length before ordering
+Housing nut,M2,4,M2 nut,Hardware supplier,Press into the housing recessed holes during printing
 Camera cable,Compatible USB 3.0 cable,1,Match the camera connector and computer port,,Accessory
 Spanner wrench,SM1 compatible,1,For retaining rings,Optics supplier,Assembly tool
