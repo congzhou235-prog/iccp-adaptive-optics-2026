@@ -46,13 +46,8 @@
 .mode-convention{font-size:9px;letter-spacing:.35px;color:#8292a6;text-align:center;padding:0 14px 9px}
 @media(max-width:1000px){.mode-description{margin-inline:14px;padding-inline:8px}.mode-description math{font-size:15px}}
 
-/* Hardware and assembly page */
-.hardware-intro{padding:42px 0 48px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 85% 50%,#9ce6da08,transparent 65%)}
-.back-link{display:inline-block;font-size:12px;color:var(--muted);margin-bottom:38px}
-.hardware-intro .eyebrow{color:var(--accent)}
-.hardware-intro h1{font-size:clamp(36px,4.8vw,62px);letter-spacing:-2px;line-height:1.15}
+/* Hardware and assembly section */
 .hardware-lead{max-width:610px;color:var(--muted);font-size:14px;margin:16px 0 24px}
-.hardware-intro .hero-actions{margin-bottom:0}
 .parts-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px}
 .parts-table{width:100%;border-collapse:collapse;text-align:left;font-size:13px}
 .parts-table th,.parts-table td{padding:20px 22px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -70,7 +65,7 @@
 .housing-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .housing-card{padding:25px 28px;border:1px solid var(--line);border-radius:6px;background:linear-gradient(120deg,#bda9e909,var(--panel))}
 .housing-card .file-tag{color:#c9b7f1}
-.housing-card h3{margin:12px 0}
+.housing-card h4{margin:12px 0}
 .housing-card p{font-size:13px;color:var(--muted);max-width:420px}
 .assembly-section{display:grid;grid-template-columns:1fr 1fr;gap:65px}
 .assembly-steps{list-style:none;counter-reset:assembly;margin:0;padding:0}
@@ -78,7 +73,12 @@
 .assembly-steps li:last-child{padding-bottom:0}
 .assembly-steps li::before{content:"0" counter(assembly);position:absolute;left:0;top:0;color:var(--accent);font:14px/1.7 var(--mono)}
 .assembly-steps p{color:var(--muted);font-size:13px;margin-top:8px}
-.hardware-next{display:flex;justify-content:space-between;gap:20px;padding:28px 0;border-bottom:1px solid var(--line);font-size:13px}
-.hardware-next p{color:var(--muted)}
-.hardware-next a{color:var(--accent)}
-@media(max-width:740px){.hardware-intro{padding:28px 0 35px}.back-link{margin-bottom:28px}.hardware-intro h1{font-size:38px;letter-spacing:-1.5px}.parts-table{min-width:650px}.parts-table th,.parts-table td{padding:16px}.housing-grid,.assembly-section{grid-template-columns:1fr;gap:24px}.housing-card{padding:23px}.hardware-next{flex-direction:column;gap:8px}}
+@media(max-width:740px){.parts-table{min-width:650px}.parts-table th,.parts-table td{padding:16px}.housing-grid,.assembly-section{grid-template-columns:1fr;gap:24px}.housing-card{padding:23px}}
+
+.hardware-resources{margin:0 0 30px;font-size:13px}
+.hardware-subsection+.hardware-subsection{border-top:1px solid var(--line);margin-top:32px;padding-top:32px}
+.hardware-subsection .section-heading{margin-bottom:20px}
+.hardware-subsection .section-heading h3,.hardware-subsection.assembly-section h3{font-size:24px;font-weight:480;line-height:1.3}
+.hardware-subsection h4{font-size:17px;font-weight:500;line-height:1.35;letter-spacing:-.25px;margin:0}
+.hardware-subsection .housing-card h4{margin:12px 0}
+@media(max-width:740px){.site-header nav{flex-wrap:wrap;justify-content:center;gap:12px 22px}}

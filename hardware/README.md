@@ -1,6 +1,6 @@
 # Shack-Hartmann sensor hardware
 
-[Hardware page](../hardware.html) · [Parts list (CSV)](BOM.csv) · [Illustrated assembly guide](../Assembly%20Guide%20for%20the%20Hartmann%20Sensor.pdf)
+[Hardware section](../index.html#hardware) · [Parts list (CSV)](BOM.csv) · [Illustrated assembly guide](../Assembly%20Guide%20for%20the%20Hartmann%20Sensor.pdf)
 
 The sensor uses a DAHENG VEN-161-61U3M bare-board camera, an LBTEK MLAS10-F15-P300-AB mounted microlens array, an SM1-12.5A lens tube, and a printed front and back housing.
 

@@ -14,7 +14,7 @@
   <div class="page-shell">
     <header class="site-header">
       <a class="brand lab-brand" href="https://ai4scientificimaging.org/" target="_blank" rel="noopener" aria-label="PKU Computational Scientific Imaging Lab website"><span class="brand-name">PKU Computational Scientific Imaging Lab</span><span class="brand-year">/ 2026</span></a>
-      <nav aria-label="Main navigation"><a href="#materials">Materials</a><a href="#tutorial">Tutorial</a><a href="#results">Results</a></nav>
+      <nav aria-label="Main navigation"><a href="#materials">Materials</a><a href="#hardware">Hardware</a><a href="#tutorial">Tutorial</a><a href="#results">Results</a></nav>
     </header>
 
     <main id="main">
@@ -64,19 +64,60 @@
         <div class="section-heading"><div><p class="eyebrow">01 / COURSE MATERIALS</p><h2 id="materials-title">Start here.</h2></div><p>Three steps, from the basic idea<br>to your first measurement.</p></div>
         <div class="material-grid">
           <article class="material-card"><div class="card-top"><span class="step-number">01</span><span class="file-tag">PDF · NOTES</span></div><h3>Understand the wavefront</h3><p>Learn how wavefronts, spot shifts, and Zernike modes connect to adaptive optics.</p><a class="card-link" href="Hartmann%20Sensor%20Course%20Notes.pdf" target="_blank" rel="noopener">Open course notes <span aria-hidden="true">↗</span></a></article>
-          <article class="material-card"><div class="card-top"><span class="step-number">02</span><span class="file-tag">HARDWARE · ASSEMBLY</span></div><h3>Build the sensor</h3><p>Assemble the camera and microlens array, adjust the focus, and align the spot pattern.</p><a class="card-link" href="hardware.html">Explore hardware &amp; assembly <span aria-hidden="true">↗</span></a></article>
+          <article class="material-card"><div class="card-top"><span class="step-number">02</span><span class="file-tag">HARDWARE · ASSEMBLY</span></div><h3>Build the sensor</h3><p>Assemble the camera and microlens array, adjust the focus, and align the spot pattern.</p><a class="card-link" href="#hardware">Explore hardware &amp; assembly <span aria-hidden="true">↗</span></a></article>
           <article class="material-card"><div class="card-top"><span class="step-number">03</span><span class="file-tag">PYTHON · TUTORIAL</span></div><h3>Measure the aberrations</h3><p>Use the saved images to calibrate the sensor, track spot shifts, and fit Zernike coefficients.</p><a class="card-link" href="#tutorial">Start the image analysis <span aria-hidden="true">↗</span></a></article>
         </div>
       </section>
 
+      <section class="section hardware-section" id="hardware" aria-labelledby="hardware-title">
+        <div class="section-heading"><div><p class="eyebrow">02 / HARDWARE &amp; ASSEMBLY</p><h2 id="hardware-title">Build your sensor.</h2></div><p>A camera, a microlens array,<br>and a printed housing.</p></div>
+        <div class="resource-links hardware-resources"><a href="Assembly%20Guide%20for%20the%20Hartmann%20Sensor.pdf" target="_blank" rel="noopener">Open assembly guide <span aria-hidden="true">↗</span></a><a href="hardware/BOM.csv" download>Download parts list <span aria-hidden="true">↓</span></a></div>
+      <section class="hardware-subsection" id="parts" aria-labelledby="parts-title">
+        <div class="section-heading"><div><h3 id="parts-title">What you need.</h3></div><p>Quantities are for one sensor.<br>Product links open the supplier pages.</p></div>
+        <div class="parts-table-wrap" role="region" aria-label="Sensor parts list" tabindex="0">
+          <table class="parts-table">
+            <thead><tr><th scope="col">Part</th><th scope="col">Model / specification</th><th scope="col">Qty.</th><th scope="col">Source</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Monochrome camera</th><td><strong>VEN-161-61U3M</strong><span>Bare board, no lens mount. Sony IMX296, 1440 × 1080 pixels, 3.45 µm pixel size.</span></td><td>1</td><td><a href="https://en.daheng-imaging.com/show-93-2117-1.html" target="_blank" rel="noopener">DAHENG ↗</a></td></tr>
+              <tr><th scope="row">Mounted microlens array</th><td><strong>MLAS10-F15-P300-AB</strong><span>300 µm pitch, 14.6 mm focal length, 400–900 nm coating. Mount diameter: 25.4 mm.</span></td><td>1</td><td><a href="https://en.lbtek.com/product/378" target="_blank" rel="noopener">LBTEK ↗</a></td></tr>
+              <tr><th scope="row">Lens tube</th><td><strong>SM1-12.5A</strong><span>SM1 internal and external threads, 12.5 mm internal thread length. Includes one SM1R retaining ring.</span></td><td>1</td><td><a href="https://en.lbtek.com/product/221" target="_blank" rel="noopener">LBTEK ↗</a></td></tr>
+              <tr><th scope="row">Retaining rings</th><td><strong>SM1R</strong><span>Two rings hold the array in place. With one included in the tube, add one extra.</span></td><td>2 total</td><td>Optics supplier</td></tr>
+              <tr><th scope="row">Printed housings</th><td><strong>Front + back</strong><span>One of each. Print files and settings will be added here.</span></td><td>1 pair</td><td><a href="#printed-parts">Details ↓</a></td></tr>
+              <tr><th scope="row">Housing screws</th><td><strong>Size to be confirmed</strong><span>The assembly uses four screws. Thread and length will be listed with the housing files.</span></td><td>4</td><td>To be confirmed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="hardware-note">Also prepare a compatible USB 3.0 camera cable, an SM1 spanner wrench, clean gloves, and a computer with the camera driver and Galaxy Viewer. A collimated beam is needed to check focus and alignment.</p>
+      </section>
+
+      <section class="hardware-subsection" id="printed-parts" aria-labelledby="print-title">
+        <div class="section-heading"><div><h3 id="print-title">The camera housing.</h3></div><p class="availability">Print files coming soon</p></div>
+        <div class="housing-grid">
+          <article class="housing-card"><span class="file-tag">PART 01</span><h4>Front housing</h4><p>Holds the camera board and provides the SM1 opening for the lens tube. The sensor faces this opening.</p></article>
+          <article class="housing-card"><span class="file-tag">PART 02</span><h4>Back housing</h4><p>Secures the camera board with four screws. The opening lines up with the camera connector.</p></article>
+        </div>
+        <p class="hardware-note">STL files, editable CAD files, print material, settings, and screw sizes are not available yet. These details are needed to reproduce the housing.</p>
+      </section>
+
+      <section class="hardware-subsection assembly-section" id="assembly" aria-labelledby="assembly-title">
+        <div><h3 id="assembly-title">Put it together.<br>Bring the spots into focus.</h3><p class="hardware-lead">The existing guide includes photos for each stage, camera setup, and an example of the final spot pattern.</p><a class="button primary" href="Assembly%20Guide%20for%20the%20Hartmann%20Sensor.pdf" target="_blank" rel="noopener">Read the illustrated guide <span aria-hidden="true">↗</span></a></div>
+        <ol class="assembly-steps">
+          <li><h4>Fit the camera</h4><p>Place the board in the front housing. Fit the back housing and tighten the four screws gently.</p></li>
+          <li><h4>Mount the array</h4><p>Hold the microlens array between two retaining rings in the lens tube, then attach the tube to the housing.</p></li>
+          <li><h4>Start the camera</h4><p>Connect the camera and open the live image in Galaxy Viewer. Center the sensor in the collimated beam.</p></li>
+          <li><h4>Focus and align</h4><p>Adjust the array position until the spots are small and clear. Rotate the array to align the grid, then secure it gently.</p></li>
+        </ol>
+      </section>
+      </section>
+
       <section class="section tutorial-section" id="tutorial" aria-labelledby="tutorial-title">
-        <div class="tutorial-copy"><p class="eyebrow">02 / OFFLINE IMAGE ANALYSIS</p><h2 id="tutorial-title">From spots<br>to coefficients.</h2><p>The tutorial includes Python scripts, calibration images, sample datasets, and a notebook that walks through the workflow.</p><p>Download and extract the package. Open a terminal in <code>sh_tutorial_prog</code>, then create and activate the environment.</p><a class="button primary" href="downloads/sh-tutorial.zip" download>Download code &amp; data <span aria-hidden="true">↓</span></a><p class="download-note">ZIP · Includes environment file and example data</p><div class="resource-links"><a href="sh_tutorial_prog/README.md">Read README <span aria-hidden="true">↗</span></a><a href="sh_tutorial_prog/main.ipynb" download>Download notebook <span aria-hidden="true">↓</span></a><a href="sh_tutorial_prog/tutorial_environment.yml" download>Environment file <span aria-hidden="true">↓</span></a></div></div>
+        <div class="tutorial-copy"><p class="eyebrow">03 / OFFLINE IMAGE ANALYSIS</p><h2 id="tutorial-title">From spots<br>to coefficients.</h2><p>The tutorial includes Python scripts, calibration images, sample datasets, and a notebook that walks through the workflow.</p><p>Download and extract the package. Open a terminal in <code>sh_tutorial_prog</code>, then create and activate the environment.</p><a class="button primary" href="downloads/sh-tutorial.zip" download>Download code &amp; data <span aria-hidden="true">↓</span></a><p class="download-note">ZIP · Includes environment file and example data</p><div class="resource-links"><a href="sh_tutorial_prog/README.md">Read README <span aria-hidden="true">↗</span></a><a href="sh_tutorial_prog/main.ipynb" download>Download notebook <span aria-hidden="true">↓</span></a><a href="sh_tutorial_prog/tutorial_environment.yml" download>Environment file <span aria-hidden="true">↓</span></a></div></div>
         <div class="terminal"><div class="terminal-header"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>QUICK START</span><span>CONDA / PYTHON</span></div><div class="terminal-body"><p class="code-comment"># 1. Set up the environment</p><pre><code>conda env create -f tutorial_environment.yml
 conda activate sh-tutorial</code></pre><p class="code-comment"># 2. Calibrate the sensor</p><pre><code>python calibration.py</code></pre><p class="code-comment"># 3. Analyze the first dataset</p><pre><code>python analyze_zernike.py --group first_10_zernike</code></pre><div class="terminal-note"><span aria-hidden="true">↳</span><p>Or open <code>main.ipynb</code> in VS Code and select the <code>sh-tutorial</code> Python environment as the notebook kernel.</p></div></div></div>
       </section>
 
       <section class="section" id="results" aria-labelledby="results-title">
-        <div class="section-heading"><div><p class="eyebrow">03 / A LOOK AT THE OUTPUT</p><h2 id="results-title">Make the wavefront visible.</h2></div><p>Example outputs from a mixed Zernike sample (j = 3, 7, 10, 15).<br>Open each image for a closer look.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">04 / A LOOK AT THE OUTPUT</p><h2 id="results-title">Make the wavefront visible.</h2></div><p>Example outputs from a mixed Zernike sample (j = 3, 7, 10, 15).<br>Open each image for a closer look.</p></div>
         <div class="result-grid">
           <figure class="result-card"><a href="sh_tutorial_prog/results/zernike_mixed_zernike_20260709_110737/sample_02_j03+j07+j10+j15/spot_displacements_gate.png" target="_blank" rel="noopener" aria-label="Open full-size mixed Zernike spot displacement plot"><img src="sh_tutorial_prog/results/zernike_mixed_zernike_20260709_110737/sample_02_j03+j07+j10+j15/spot_displacements_gate.png" alt="Mixed Zernike sample (j = 3, 7, 10, 15) with reference and measured spot positions and displacement arrows" width="1800" height="1400" loading="lazy"></a><figcaption><span class="file-tag">SPOT DISPLACEMENTS</span><h3>Follow the spot shifts.</h3><p>Arrows show the displacement of selected spots, enlarged for visibility.</p></figcaption></figure>
           <figure class="result-card"><a href="sh_tutorial_prog/results/zernike_mixed_zernike_20260709_110737/sample_02_j03+j07+j10+j15/true_vs_measured_zernike.png" target="_blank" rel="noopener" aria-label="Open full-size Zernike coefficient comparison"><img class="coefficient-image" src="sh_tutorial_prog/results/zernike_mixed_zernike_20260709_110737/sample_02_j03+j07+j10+j15/true_vs_measured_zernike.png" alt="Bar chart comparing the true and measured phase coefficients for the mixed Zernike sample (j = 3, 7, 10, 15)" loading="lazy"></a><figcaption><span class="file-tag">ZERNIKE COEFFICIENTS</span><h3>Compare the recovered modes.</h3><p>Compare fitted phase coefficients with the supplied values and inspect the differences.</p></figcaption></figure>
