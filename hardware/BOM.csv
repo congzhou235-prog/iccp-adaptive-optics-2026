@@ -6,6 +6,6 @@ Retaining ring,SM1R,2,SM1 external thread; 2.0 mm thick; 23.0 mm clear aperture;
 Front housing,Custom printed part,1,Camera board seat and SM1 opening,,Choose a strong material with good heat resistance; STEP models linked in hardware/README.md; STL and print settings pending
 Back housing,Custom printed part,1,Camera connector opening,,Choose a strong material with good heat resistance; STEP models linked in hardware/README.md; STL and print settings pending
 Housing screw,M2,4,M2 thread,Hardware supplier,Joins the housing parts
-Housing nut,M2x2,4,Brass insert nut; M2x2 size required to fit the reserved holes,Hardware supplier,Press into the housing recessed holes during printing
+Housing nut,M2x2,4,Brass insert nut; supplier dimensions: length 3.5 mm; pilot hole diameter 3.2 mm; workpiece outer diameter 6.2 mm,Hardware supplier,Press into the housing recessed holes during printing
 Camera cable,Compatible USB 3.0 cable,1,Match the camera connector and computer port,,Accessory
 Spanner wrench,SM1 compatible,1,For retaining rings,Optics supplier,Assembly tool

@@ -25,6 +25,14 @@ Individual files:
 - [hartmann1.STEP](../hartmann1.STEP)
 - [hartmann2 - 0923new.step](../hartmann2%20-%200923new.step)
 
+Dimensions for M2×2 from the supplier’s table (all in mm):
+
+| Model | Length | Pilot hole diameter | Workpiece outer diameter |
+| --- | --- | --- | --- |
+| M2×2 | 3.5 | 3.2 | 6.2 |
+
+The 6.2 mm value describes the workpiece outer diameter, not the nut outer diameter.
+
 During printing, pause when the housing’s recessed holes are accessible. Use M2×2 brass insert nuts to fit the reserved holes. Press the four nuts into the recesses, then resume printing. Use the embedded nuts to secure the housing with the M2 screws.
 
 Choose a strong printing material with good heat resistance. The specific material, print settings, and STL files are still to be added.
