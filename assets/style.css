@@ -80,8 +80,6 @@
 .assembly-section>div,.assembly-steps{min-width:0}
 .assembly-video{margin-top:26px}
 .assembly-video video{display:block;width:100%;max-height:420px;background:#05080d;border:1px solid var(--line);border-radius:6px}
-.assembly-video figcaption{margin-top:9px;color:var(--muted);font-size:13px}
-.assembly-video figcaption a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
 @media(max-width:1000px){.site-header{flex-wrap:wrap;padding-block:22px}.hero{gap:26px}.hero .eyebrow{flex-wrap:wrap}}
 @media(max-width:740px){h1{font-size:clamp(48px,13vw,71px)}.hero-tags{flex-wrap:wrap}.panel-top{flex-wrap:wrap}.assembly-video video{max-height:none}}
 
@@ -106,3 +104,6 @@ a.result-card:hover,a.result-card:focus-visible{
   box-shadow:0 0 0 2px #9ce6da99,0 0 24px #9ce6da30;
 }
 a.result-card:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+
+#assembly-title{font-size:36px;line-height:1.25;letter-spacing:-.8px}
+@media(max-width:740px){#assembly-title{font-size:30px}}
