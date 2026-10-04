@@ -16,10 +16,4 @@ Build a Shack-Hartmann sensor and learn to measure wavefront aberrations.
 
 Lecturer: [He Sun](https://hesunpu.github.io/index.html) · Teaching assistant: [Shuqi Mu](https://scholar.google.com/citations?user=fEJv1TwAAAAJ&hl=en)
 
-## Website
-
-Open `index.html` in a browser to preview the website locally.
-
-GitHub Pages publishes the root folder of the `main` branch. Website styles and the interactive spot illustration are in `assets/`. Keep the relative file paths when updating course materials.
-
 Visit the [PKU Computational Scientific Imaging Lab website](https://ai4scientificimaging.org/) to learn more about our group.
