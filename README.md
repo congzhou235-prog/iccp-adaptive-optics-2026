@@ -22,4 +22,4 @@ Open `index.html` in a browser to preview the website locally.
 
 GitHub Pages publishes the root folder of the `main` branch. Website styles and the interactive spot illustration are in `assets/`. Keep the relative file paths when updating course materials.
 
-[PKU Computational Scientific Imaging Lab](https://ai4scientificimaging.org/)
+欢迎访问我们的课题组网页 [PKU Computational Scientific Imaging Lab](https://ai4scientificimaging.org/)，了解更多信息。
