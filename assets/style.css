@@ -15,6 +15,9 @@
 .team-person-link .team-name:hover,.team-person-link:focus-visible .team-name{color:var(--accent)}
 .team-photo{display:block;width:112px;height:112px;border-radius:50%;overflow:hidden}
 .team-photo img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 32%}
+.team-lab-invite{grid-column:1/-1;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px 22px;margin-top:14px;text-align:center}
+.team-lab-invite p{font-size:18.4px;color:var(--muted)}
+.team-lab-invite .button{gap:10px}
 @media(max-width:800px){.course-team{grid-template-columns:1fr;gap:25px;max-width:650px}}
 @media(max-width:600px){.assistant-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 12px}}
 .lecture-resource{--action-bg:var(--accent);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);align-items:center;gap:24px;padding:25px;margin-bottom:18px;border:1px solid var(--line);border-radius:5px;background:linear-gradient(100deg,#14242b,#101720)}
